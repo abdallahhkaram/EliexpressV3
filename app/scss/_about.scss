@@ -1,0 +1,35 @@
+.about {
+    color: white;
+    z-index: -100;
+    padding: 50px;
+    padding-bottom: 100px;
+    img {
+        display: inline-block;
+        float: right;
+        @include breakpoint-down(medium) {
+            display: block;
+            float: none;
+            margin-bottom: 15px;
+        }
+    }
+    h4 {
+        font-size: $font-lar;
+        margin-bottom: 15px;
+        border-bottom: solid 1px white;
+    }
+    h2 {
+        font-size: $font-xlar;
+        margin-bottom: 5px;
+    }
+    h3 {
+        font-size: $font-lar;
+        margin-bottom: 15px;
+    }
+    p {
+        font-size: $font-reg;
+        max-width: 800px;
+    }
+    .or {
+        color: $orange;
+    }
+}

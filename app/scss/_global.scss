@@ -1,0 +1,66 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: $blue;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+a,
+a:visited,
+a:hover {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+//container style
+
+.container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    max-width: 1200px;
+    margin: auto;
+}
+.shadow {
+    -webkit-box-shadow: 5px 5px 15px 10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 5px 5px 15px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 15px 10px rgba(0, 0, 0, 0.3);
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.hide-for-desktop {
+    @include breakpoint-up(large) {
+        display: none;
+    }
+}
+.hide-for-mobile {
+    @include breakpoint-down(medium) {
+        display: none;
+    }
+}

@@ -1,0 +1,75 @@
+.footer {
+    width: 100%;
+    background: $darkblue;
+    overflow: hidden;
+    color: white;
+
+    .fa {
+        font-size: 30px;
+        margin: 15px;
+    }
+
+    &__content {
+        text-align: center;
+        padding: 15px;
+
+        @include breakpoint-up(medium) {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__location {
+        padding: 15px;
+        margin: auto;
+
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            max-width: 300px;
+            margin: auto;
+        }
+
+        @include breakpoint-up(medium) {
+            display: flex;
+            text-align: left;
+            align-items: center;
+        }
+    }
+
+    &__social {
+        padding: 15px;
+        margin: auto;
+
+        .k {
+            margin: 15px;
+
+            h4 {
+                margin: auto 0;
+                font-size: 18px;
+            }
+
+            @include breakpoint-up(medium) {
+                display: flex;
+                text-align: left;
+            }
+        }
+    }
+
+    &__logo {
+        margin: auto;
+
+        img {
+            width: 100px;
+            margin: 15px;
+
+            @include breakpoint-up(medium) {
+                width: 150px;
+            }
+
+            @include breakpoint-up(large) {
+                width: 200px;
+            }
+        }
+    }
+}
