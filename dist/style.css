@@ -56,6 +56,10 @@ li {
   width: 100%;
 }
 
+.sticky .dropdown-cont {
+  top: 76px;
+}
+
 @media (min-width: 64em) {
   .hide-for-desktop {
     display: none;
@@ -432,13 +436,13 @@ li {
   -webkit-transform: translateY(83px);
           transform: translateY(83px);
   right: 0;
-  width: 350px;
+  width: 250px;
   height: 100vh;
   background: white;
   padding-bottom: 15px;
   border: 1px solid rgba(15, 57, 80, 0.1);
-  -webkit-transition: ease-in-out 0.5s;
-  transition: ease-in-out 0.5s;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
   z-index: 5;
   -webkit-box-shadow: -5px 25px 15px 5px rgba(0, 0, 0, 0.3);
   box-shadow: -5px 25px 15px 5px rgba(0, 0, 0, 0.3);
@@ -690,6 +694,7 @@ li {
   font-size: 18px;
   -webkit-transition: ease-in 0.15s;
   transition: ease-in 0.15s;
+  -webkit-appearance: none;
 }
 
 .home-tracking-form .track-form-btn:hover {
@@ -1064,6 +1069,7 @@ li {
 .footer__social .k h4 {
   margin: auto 0;
   font-size: 18px;
+  color: white;
 }
 
 @media (min-width: 40em) {

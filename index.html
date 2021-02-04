@@ -62,7 +62,7 @@
                         </div>
                         <div class="header-info-right">
                             <div class="header-info-right-links">
-                                <a href="#">Contact Us</a>
+                                <a href="#" ><span data-trans-contact> Contact Us</span></a>
                             </div>
                             <ul class="header-social">
                                 <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
@@ -70,6 +70,14 @@
                                 <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
                                 <li> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                             </ul>
+                            <select id="langs">
+                              
+                                  <option value="en">English</option>
+                               
+                                  <option value="tr">Turkish</option>
+                              
+                                </select>
+                                
                         </div>
                     </div>
 
@@ -84,7 +92,7 @@
                         <div class="header-bot-right hide-for-mobile">
                             <ul class="header-bot-links">
                                 <li>
-                                    <a href="about.html">About Us</a>
+                                    <a href="about.html"><span data-trans-about> About Us</span></a>
                                     <div class="dropdown-cont  header-about">
                                         <div class="dropdown-img">
                                             <div class=""> <img src="./assets/courierbg.png" alt="couriers"></div>
@@ -206,7 +214,7 @@
                             </div>
                             <div class="mobile-links hamburger-links ham-link-close shadow" id="hamLinks" style="display: none;">
                                 <ul>
-                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="about.html">About Us</a></li>
                                     <li><a href="#">eCommerce</a></li>
                                     <li><a href="#">Freight</a></li>
                                     <li><a href="#">Tools</a></li>
@@ -309,7 +317,7 @@
                 </iframe>
             </div>
             <div class="contact__card contact__message shadow">
-                <h2>Contact Us</h2>
+                <h2><span data-trans-contact>Contact Us</span></h2>
                 <form action="MAILTO:abdallahhkaram@gmail.com" method="post" enctype="text/plain">
                     <input type="text" name="text" placeholder="Name" />
 
@@ -347,14 +355,28 @@
                 </div>
 
                 <div class="footer__logo">
-                    <img src="./assets/Eli_logo_w.svg" alt="Eli Logo">
-                    <img src="./assets/iata.svg" alt="Iata" class="iata">
+                    <img src="/assets/Eli_logo_w.svg" alt="Eli Logo">
+                    <img src="/assets/iata.svg" alt="Iata" class="iata">
                 </div>
             </div>
         </div>
     </footer>
-    
-    <script src="./app/js/script.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="./app/js/translate.js"></script>
+    <script src="./app/js/languages.js"></script>
+    <script>
+        $(function(){
+            $("span").translate({
+            default_lang:"en",
+            langs:"#langs",
+            source: txt
+        });
+        });
+    </script>
 </body>
 
 </html>

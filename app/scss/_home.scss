@@ -126,6 +126,7 @@
         border: none;
         font-size: $font-reg;
         transition: ease-in 0.15s;
+        -webkit-appearance: none;
         &:hover {
             background: $blue;
         }

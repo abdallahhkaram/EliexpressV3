@@ -97,8 +97,8 @@
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
     z-index: 1;
-    top: 118px;
 
+    top: 118px;
     -webkit-box-shadow: -5px 15px 15px 5px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: -5px 15px 15px 5px rgba(0, 0, 0, 0.3);
     box-shadow: -5px 15px 15px 5px rgba(0, 0, 0, 0.3);
@@ -168,12 +168,12 @@
     top: 0;
     transform: translateY(83px);
     right: 0;
-    width: 350px;
+    width: 250px;
     height: 100vh;
     background: white;
     padding-bottom: 15px;
     border: 1px solid rgba(15, 57, 80, 0.1);
-    transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.3s;
     z-index: 5;
 
     -webkit-box-shadow: -5px 25px 15px 5px rgba(0, 0, 0, 0.3);
