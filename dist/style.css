@@ -286,6 +286,16 @@ li {
   margin-right: 10px;
 }
 
+#langs {
+  padding: 5px;
+  background: #1c74a4;
+  border: solid 1px white;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
 .header-bot {
   width: 100%;
   background: white;

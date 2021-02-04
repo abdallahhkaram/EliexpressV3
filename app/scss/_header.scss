@@ -48,6 +48,15 @@
         }
     }
 }
+#langs {
+    padding: 5px;
+    background: $blue;
+    border: solid 1px white;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
 
 .header-bot {
     width: 100%;
