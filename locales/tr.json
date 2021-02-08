@@ -1,0 +1,10 @@
+{
+    "*": {
+        "contact": "İletişim",
+        "about": "Hakkımızda",
+        "ecommerce": "eTicaret",
+        "freight": "Navlun",
+        "tools": "Araçlar",
+        "login": "Oturum aç"
+    }
+}

@@ -48,16 +48,23 @@
         }
     }
 }
-#langs {
-    padding: 5px;
-    background: $blue;
-    border: solid 1px white;
-    border-radius: 5px;
-    color: white;
-    font-weight: 700;
-    cursor: pointer;
+//////
+.langswitch {
+    img {
+        height: 30px;
+        opacity: 0.5;
+        border-radius: 10px;
+        &:hover {
+            cursor: pointer;
+            opacity: 1;
+        }
+    }
+    .active-flag {
+        transition: all 0.5s;
+        opacity: 1 !important;
+    }
 }
-
+////
 .header-bot {
     width: 100%;
     background: white;

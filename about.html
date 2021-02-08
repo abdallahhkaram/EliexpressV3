@@ -61,23 +61,22 @@
                         </div>
                         <div class="header-info-right">
                             <div class="header-info-right-links">
-                                <a href="#" ><span data-trans-contact> Contact Us</span></a>
+                                <a href="#" key="contact">Contact Us</a>
                             </div>
                             <ul class="header-social">
                                 <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
                                 <li> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                            </ul>
-                            <div class="lang-select">
-                                <select id="langs">                              
-                                    <option value="en">EN</option>                               
-                                    <option value="tr">TR</option>                              
-                                  </select>
-                            </div>
-                           
-                                
-                        </div>
+                                <div class="langswitch">
+                                    <img src="./assets/eng.svg" alt="EN" class="en_lang" onclick="setLanguage('en')">
+                                    <img src="./assets/tr.svg" alt="TR" class="tr_lang" onclick="setLanguage('tr')">
+                                </div>
+                            </ul>     
+                                                    
+                        </div>    
+                      
+                      
                     </div>
 
                 </div>
@@ -91,7 +90,7 @@
                         <div class="header-bot-right hide-for-mobile">
                             <ul class="header-bot-links">
                                 <li>
-                                    <a href="about.html"><span data-trans-about> About Us</span></a>
+                                    <a href="about.html" key="about">About Us</a>
                                     <div class="dropdown-cont  header-about">
                                         <div class="dropdown-img">
                                             <div class=""> <img src="./assets/courierbg.png" alt="couriers"></div>
@@ -111,7 +110,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="#">eCommerce
+                                    <a href="#" key="ecommerce">eCommerce
                                         <i class="fa fa-angle-down" aria-hidden="true"></i>
                                     </a>
                                     <div class="dropdown-cont ">
@@ -140,7 +139,7 @@
 
                                 </li>
                                 <li>
-                                    <a href="#">Freight
+                                    <a href="#" key="freight">Freight
                                         <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                                     <div class="dropdown-cont ">
                                         <ul>
@@ -164,7 +163,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="#">Tools
+                                    <a href="#" key="tools">Tools
                                         <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                                     <div class="dropdown-cont ">
                                         <ul>
@@ -198,7 +197,7 @@
                                     </div>
                                 </li>
                                 <li style="cursor: pointer;">
-                                    <a onclick="document.getElementById('loginModal').style.display='block'; document.body.style.overflow = 'hidden';">Login <i class="fa fa-user" aria-hidden="true"></i></a>
+                                    <a onclick="document.getElementById('loginModal').style.display='block'; document.body.style.overflow = 'hidden';" key="tools">login <i class="fa fa-user" aria-hidden="true"></i></a>
                                   
                                 </li>
                                 
@@ -230,6 +229,8 @@
             </div>
         </div>
     </header>
+
+
     <div class="about">
         <div class="about-wrapper container">
             <H4>About Us</H4>            
@@ -332,23 +333,11 @@
             </div>
         </div>
     </footer>
-    <script
-    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
-    crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-    <script src="./app/js/translate.js"></script>
-    <script src="./app/js/languages.js"></script>
-    <script>
-        $(function(){
-            $("span").translate({
-            default_lang:"en",
-            langs:"#langs",
-            source: txt
-        });
-        });       
-    </script>
-    <script src="./app/js/script.js"></script>
+    
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="./app/js/jquery.MultiLanguage.min.js"></script>
+<script>getLanguage();</script>
+<script src="./app/js/script.js"></script>
 </body>
 
 </html>

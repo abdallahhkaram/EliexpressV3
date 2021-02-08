@@ -286,14 +286,21 @@ li {
   margin-right: 10px;
 }
 
-#langs {
-  padding: 5px;
-  background: #1c74a4;
-  border: solid 1px white;
-  border-radius: 5px;
-  color: white;
-  font-weight: 700;
+.langswitch img {
+  height: 30px;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+
+.langswitch img:hover {
   cursor: pointer;
+  opacity: 1;
+}
+
+.langswitch .active-flag {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 1 !important;
 }
 
 .header-bot {
