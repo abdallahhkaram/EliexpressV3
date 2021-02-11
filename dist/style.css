@@ -1180,6 +1180,7 @@ li {
 }
 
 .address-book-form {
+  overflow: hidden;
   background: white;
   margin-top: 50px;
   border-radius: 5px;
@@ -1203,6 +1204,13 @@ li {
   .address-book-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 671px) {
+  .address-book-wrapper {
+    max-width: 350px;
+    margin: auto;
   }
 }
 
@@ -1276,6 +1284,12 @@ li {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+}
+
+@media (max-width: 671px) {
+  .address-book-left select {
+    height: 50px;
   }
 }
 
