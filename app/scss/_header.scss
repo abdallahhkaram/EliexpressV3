@@ -237,3 +237,15 @@
         }
     }
 }
+.mobile-drop {
+    display: none;
+}
+.mobile-drop-shown {
+    display: block;
+    li a {
+        padding-left: 25px;
+    }
+}
+.mobileToggle {
+    transform: rotate(180deg);
+}

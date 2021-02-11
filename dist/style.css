@@ -513,6 +513,23 @@ li {
   color: #eb7828;
 }
 
+.mobile-drop {
+  display: none;
+}
+
+.mobile-drop-shown {
+  display: block;
+}
+
+.mobile-drop-shown li a {
+  padding-left: 25px;
+}
+
+.mobileToggle {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .home {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1209,7 +1226,6 @@ li {
 
 @media (max-width: 671px) {
   .address-book-wrapper {
-    max-width: 350px;
     margin: auto;
   }
 }
@@ -1281,9 +1297,6 @@ li {
 @media (max-width: 63.9375em) {
   .address-book-left select {
     width: 100%;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
   }
 }
 

@@ -30,3 +30,7 @@ window.onclick = function (event) {
 };
 
 //////// lang selectopr
+function mobileDrop() {
+    document.getElementById("mobileDrop").classList.toggle("mobile-drop-shown");
+    document.getElementById("mobileToggle").classList.toggle("mobileToggle");
+}
