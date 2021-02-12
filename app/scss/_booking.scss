@@ -1,9 +1,67 @@
 .booking-wrapper {
-    color: $darlgrey;
-    margin-top: 15px;
+    background: white;
+    margin-top: 50px;
+    border-radius: 5px;
+    padding: 15px;
 }
 .booking-form-wrapper {
-    background: white;
+}
+.booking-form-top {
+    label {
+        font-size: 24px;
+    }
+}
+.booking-form-top-top {
+    background: lightgray;
     padding: 15px;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .test {
+        width: 70%;
+    }
+    select {
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 7px;
+    }
+    button {
+        align-self: flex-end;
+        width: 25%;
+        height: 100%;
+        cursor: pointer;
+        background: $blue;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        padding: 7px;
+        font-size: 20px;
+        @include breakpoint-down(small) {
+            font-size: 14px;
+        }
+        &:hover {
+            background: $orange;
+        }
+    }
+}
+.booking-form-top-bot {
+    background: lightgray;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    input {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 7px;
+        width: 300px;
+    }
+    @include breakpoint-down(small) {
+        flex-direction: column;
+        input {
+            margin-bottom: 15px;
+        }
+    }
 }
