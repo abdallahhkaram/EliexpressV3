@@ -93,13 +93,21 @@
             padding: 22px 0px;
             color: $darlgrey;
             &:hover {
-                transition: ease-in 0.15s;
                 color: $orange;
             }
         }
         &:hover {
             .dropdown-cont {
                 display: block;
+            }
+            span {
+                a {
+                    color: $orange;
+                }
+                i {
+                    cursor: pointer;
+                    color: $orange;
+                }
             }
         }
     }

@@ -56,8 +56,8 @@
         }
         option {
             padding: 5px;
-            color: white;
-            background: rgba(28, 116, 164, 0.9);
+            color: $darlgrey;
+            font-size: 18px;
             cursor: pointer;
             &:hover {
                 background: grey;
@@ -97,7 +97,8 @@
 .address-book-right-bot {
     display: flex;
     flex-direction: column;
-    input {
+    input,
+    select {
         margin-bottom: 15px;
         margin-right: 15px;
         padding: 7px;

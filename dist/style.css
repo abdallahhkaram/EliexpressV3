@@ -351,13 +351,20 @@ li {
 }
 
 .header-bot-links li a:hover {
-  -webkit-transition: ease-in 0.15s;
-  transition: ease-in 0.15s;
   color: #eb7828;
 }
 
 .header-bot-links li:hover .dropdown-cont {
   display: block;
+}
+
+.header-bot-links li:hover span a {
+  color: #eb7828;
+}
+
+.header-bot-links li:hover span i {
+  cursor: pointer;
+  color: #eb7828;
 }
 
 .dropdown-cont {
@@ -1285,8 +1292,8 @@ li {
 
 .address-book-left select option {
   padding: 5px;
-  color: white;
-  background: rgba(28, 116, 164, 0.9);
+  color: #35323e;
+  font-size: 18px;
   cursor: pointer;
 }
 
@@ -1354,7 +1361,8 @@ li {
           flex-direction: column;
 }
 
-.address-book-right-bot input {
+.address-book-right-bot input,
+.address-book-right-bot select {
   margin-bottom: 15px;
   margin-right: 15px;
   padding: 7px;
