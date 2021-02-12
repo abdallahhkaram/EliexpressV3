@@ -215,7 +215,7 @@
 
                         </div>
                         <div class="header-bot-menu hide-for-desktop">
-                            <div class="hamburger" id="ham" onclick="menuOnClick()">
+                            <div class="hamburger" id="ham" onclick="menuOnClick()" >
                                 <span class="span1"></span>
                                 <span class="span2"></span>
                                 <span class="span3"></span>
@@ -240,7 +240,12 @@
                                             <i class="fa fa-user" aria-hidden="true"></i></a>
 
                                     </li>
-
+                                    <li>
+                                        <div class="langswitch">
+                                    <img src="./assets/eng.svg" alt="EN" class="en_lang" onclick="setLanguage('en')">
+                                    <img src="./assets/tr.svg" alt="TR" class="tr_lang" onclick="setLanguage('tr')">
+                                </div>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -249,6 +254,7 @@
             </div>
         </div>
     </header>
+
 
 
 <section id="booking" class="booking">

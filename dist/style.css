@@ -17,7 +17,6 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   background: #1c74a4;
-  overflow-x: hidden;
 }
 
 h1,
@@ -460,7 +459,7 @@ li {
   top: 0;
   -webkit-transform: translateY(83px);
           transform: translateY(83px);
-  right: 0;
+  left: 0;
   width: 250px;
   height: 100vh;
   background: white;
@@ -486,7 +485,7 @@ li {
 
 .ham-link-close {
   visibility: hidden;
-  right: -100%;
+  left: -100%;
 }
 
 .change span {
@@ -535,6 +534,14 @@ li {
 .mobileToggle {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+@media (max-width: 63.9375em) {
+  .header-bot-left {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 
 .home {
@@ -1331,6 +1338,8 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .address-book-right-top {
@@ -1349,6 +1358,12 @@ li {
   padding: 7px;
   border-radius: 5px;
   border: solid 1px #35323e;
+}
+
+@media (max-width: 63.9375em) {
+  .address-book-right-top input {
+    min-width: 260px;
+  }
 }
 
 .address-book-right-bot {
@@ -1370,14 +1385,20 @@ li {
   border: solid 1px #35323e;
 }
 
+@media (max-width: 63.9375em) {
+  .address-book-right-bot input,
+  .address-book-right-bot select {
+    min-width: 260px;
+  }
+}
+
 .address-book-update {
+  margin-top: 15px;
   background: #1c74a4;
   color: white;
-  border: none;
-  width: 100%;
-  padding: 15px;
+  border: none !important;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .address-book-update:hover {

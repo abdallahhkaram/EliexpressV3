@@ -82,6 +82,7 @@
 .address-book-right-wrapper {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .address-book-right-top {
     display: flex;
@@ -92,6 +93,9 @@
         padding: 7px;
         border-radius: 5px;
         border: solid 1px $darlgrey;
+        @include breakpoint-down(medium) {
+            min-width: 260px;
+        }
     }
 }
 .address-book-right-bot {
@@ -104,16 +108,18 @@
         padding: 7px;
         border-radius: 5px;
         border: solid 1px $darlgrey;
+        @include breakpoint-down(medium) {
+            min-width: 260px;
+        }
     }
 }
 .address-book-update {
+    margin-top: 15px;
     background: $blue;
     color: white;
-    border: none;
-    width: 100%;
-    padding: 15px;
+    border: none !important;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 16px;
     &:hover {
         background: $orange;
         cursor: pointer;

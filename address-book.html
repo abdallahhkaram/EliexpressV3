@@ -215,7 +215,7 @@
 
                         </div>
                         <div class="header-bot-menu hide-for-desktop">
-                            <div class="hamburger" id="ham" onclick="menuOnClick()">
+                            <div class="hamburger" id="ham" onclick="menuOnClick()" >
                                 <span class="span1"></span>
                                 <span class="span2"></span>
                                 <span class="span3"></span>
@@ -240,7 +240,12 @@
                                             <i class="fa fa-user" aria-hidden="true"></i></a>
 
                                     </li>
-
+                                    <li>
+                                        <div class="langswitch">
+                                    <img src="./assets/eng.svg" alt="EN" class="en_lang" onclick="setLanguage('en')">
+                                    <img src="./assets/tr.svg" alt="TR" class="tr_lang" onclick="setLanguage('tr')">
+                                </div>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -249,6 +254,8 @@
             </div>
         </div>
     </header>
+
+
 
 
 <section id="addressBookPage">
@@ -297,11 +304,11 @@
                                 <label for="city">City*</label>
                                 <input type="text" name="city" id="city">
                                 <label for="state">State*</label>
-                                <input type="text" name="state" id="state">
-                             </div>                 
-                             <div class="address-book-right-bot ">
+                                <input type="text" name="state" id="state">                                
                                 <label for="postcode">Post Code*</label>
                                 <input type="text" name="postcode" id="postcode">
+                             </div>                 
+                             <div class="address-book-right-bot ">
                                 <label for="country">Country</label>
                                 <select id="country" name="country">
                                     <option value="Afganistan">Afghanistan</option>
@@ -560,11 +567,11 @@
                                 <label for="taxno">TAX No</label>
                                 <input type="text" name="taxno" id="taxno" >
                                 <label for="taxdeparment">TAX Department</label>
-                                <input type="text" name="taxdeparment" id="taxdeparment" >
-                                 
+                                <input type="text" name="taxdeparment" id="taxdeparment" >                                
+                                <input type="button" value="Update" class="address-book-update">
                              </div>                
                            </div>                               
-                         <input type="button" value="Update" class="address-book-update">
+                         
                        </div>
                    </div>
                    

@@ -191,7 +191,7 @@
     position: absolute;
     top: 0;
     transform: translateY(83px);
-    right: 0;
+    left: 0;
     width: 250px;
     height: 100vh;
     background: white;
@@ -215,7 +215,7 @@
 }
 .ham-link-close {
     visibility: hidden;
-    right: -100%;
+    left: -100%;
 }
 
 .change {
@@ -256,4 +256,9 @@
 }
 .mobileToggle {
     transform: rotate(180deg);
+}
+@include breakpoint-down(medium) {
+    .header-bot-left {
+        order: 2;
+    }
 }
