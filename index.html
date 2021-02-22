@@ -1,398 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="./dist/style.css" />
+        <title>Eliexpress | Worldwide Express Logistics</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="./dist/style.css">
-    <title>Eliexpress | Worldwide Express Logistics</title>
-</head>
-
-<body>
-   
-    <header>
-        <div class="login-form  login-modal" id="loginModal">
-            <div class="login-bg  shadow">
-                <form action="#" method="post">
-                    <span
-                        onclick="document.getElementById('loginModal').style.display='none'; document.body.style.overflow = 'visible'; "
-                        class="close" title="Close Modal">&times;</span>
-                    <div class="loing-form-wrapper">
-                        <label for="uname"><b>Username</b></label>
-                        <input type="text" placeholder="Enter Username" name="name" required>
-                        <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
-                        <button type="submit">Login</button>
-
-                        <label class="login-check">
-                            <input type="checkbox" name="remember"> Remeber Me
-                        </label>
-
-                    </div>
-                    <div class="login-bot">
-
-                        <a href="#">Forgot password ?</a>
-                        <a href="#" class="sign-up">Sign Up</a>
-                    </div>
-
-                </form>
-            </div>
-
+    <body>
+        <div class="loader-wrapper">
+            <span class="loader"
+                > <img src="./assets/Eli_logo_w.svg"  class="eli-logo">
+          </span
+            ></span>
         </div>
-        <div class="header-area">
-            <div class="header-top hide-for-mobile ">
-                <div class="container">
-                    <div class="header-top-wrapper">
-                        <div class="header-info-left">
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                                        info@eliexpress.com.tr
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-phone-square" aria-hidden="true"></i>
-                                        +90 212 470 37 37
-                                    </a>
-                                </li>
-                            </ul>
+        <div id="header"></div>
+        <div class="home container">
+            <div class="home-left">
+                <div class="home-bg container"><img src="./assets/Eli_logo_w.svg" alt="Elibackground" /></div>
+                <h5>Since 1999</h5>
+                <h1 key="home-h1">
+                    International shipping with
+                    Eli Express
+                </h1>
+                <p key="home-par">Retail and wholesale provider of ecommerce, courier and freight solutions</p>
+
+                <div class="home-left-cta">
+                    <button class="btn-contact">Contact Us</button>
+                    <button class="btn-quote">Get A Quote</button>
+                </div>
+            </div>
+            <div class="home-right">
+                <div class="home-right-form shadow">
+                    <h4>Track Your Order</h4>
+                    <form action="#" class="home-tracking-form">
+                        <input type="text" name="Tracking-Id" id="trackingID" placeholder="Tracking ID No." />
+                        <input type="text" name="Email" id="emailAddress" placeholder="Email Address" />
+                        <div class="track-form-cta">
+                            <a href="#">Visit Tracking page</a>
+                            <input class="track-form-btn" type="button" value="Track Now" />
                         </div>
-                        <div class="header-info-right">
-                            <div class="header-info-right-links">
-                                <a href="#" key="contact">Contact Us</a>
-                            </div>
-                            <ul class="header-social">
-                                <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
-                                <li> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                <div class="langswitch">
-                                    <img src="./assets/eng.svg" alt="EN" class="en_lang" onclick="setLanguage('en')">
-                                    <img src="./assets/tr.svg" alt="TR" class="tr_lang" onclick="setLanguage('tr')">
-                                </div>
-                            </ul>
-
-                        </div>
-
-
-                    </div>
-
-                </div>
-            </div>
-            <div class="header-bot shadow" id="topHeader">
-                <div class="container">
-                    <div class="header-bot-wrapper">
-                        <div class="header-bot-left">
-                            <a href="index.html"><img src="./assets/Eli-logo-or.svg" alt="Eli Logo"></a>
-                        </div>
-                        <div class="header-bot-right hide-for-mobile">
-                            <ul class="header-bot-links">
-                                <li>
-                                    <a href="about.html" key="about">About Us</a>
-                                    <div class="dropdown-cont  header-about">
-                                        <div class="dropdown-img">
-                                            <div class=""> <img src="./assets/courierbg.png" alt="couriers"></div>
-
-                                            <div>
-                                                <p>A new brand in the Turkish air express market, built on a foundation
-                                                    of
-                                                    experience.
-                                                    With tailor made air transport solutions to meet differing customer
-                                                    needs ...
-                                                    <a href="about.html">Read More</a>
-                                                </p>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </li>
-                                <li>
-                                    <span><a href="#" key="ecommerce">eCommerce
-
-                                        </a> <i class="fa fa-angle-down" aria-hidden="true"></i></span>
-
-                                    <div class="dropdown-cont ">
-                                        <ul>
-                                            <li>
-                                                <a href="#">Ship International</a>
-
-                                                <p>> This is a small description</p>
-                                            </li>
-                                            <li>
-                                                <a href="#">Inbound Consolidations</a>
-
-                                                <p>> This is a small description</p>
-                                            </li>
-                                            <li>
-                                                <a href="#">International Returns</a>
-
-                                                <p>> This is a small description</p>
-                                            </li>
-                                            <li>
-                                                <a href="#">International Courier</a>
-                                                <p>> This is a small description</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                </li>
-                                <li>
-                                    <span>
-                                        <a href="#" key="freight">Freight
-                                        </a> <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                    </span>
-                                    <div class="dropdown-cont ">
-                                        <ul>
-                                            <li>
-                                                <a href="#">Air Freight</a>
-
-                                                <p>> This is a small description</p>
-                                            </li>
-                                            <li>
-                                                <a href="#">Sea Freight</a>
-
-                                                <p>> This is a small description</p>
-                                            </li>
-                                            <li>
-                                                <a href="#">Road Freight</a>
-
-                                                <p>> This is a small description</p>
-                                            </li>
-
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <span> <a href="#" key="tools">Tools
-                                        </a> <i class="fa fa-angle-down" aria-hidden="true"></i></span>
-
-                                    <div class="dropdown-cont ">
-                                        <ul>
-                                            <li>
-                                                <a href="#">Tracking <i class="fa fa-truck" aria-hidden="true"></i></a>
-                                                <p>> This is a small description</p>
-                                            </li>
-                                            <li>
-                                                <a href="booking.html">Booking <i class="fa fa-book"
-                                                        aria-hidden="true"></i></a>
-                                                <p>> This is a small description</p>
-                                            </li>
-                                            <li>
-                                                <a href="#">Price Calculator <i class="fa fa-calculator"
-                                                        aria-hidden="true"></i>
-                                                </a>
-                                                <p>> This is a small description</p>
-                                            </li>
-                                            <li>
-                                                <a href="#">Quote Request<i class="fa fa-list-alt"
-                                                        aria-hidden="true"></i>
-                                                </a>
-                                                <p>> This is a small description</p>
-                                            </li>
-                                            <li>
-                                                <a href="address-book.html">Pickup Address <i class="fa fa-address-book"
-                                                        aria-hidden="true"></i>
-                                                </a>
-                                                <p>> This is a small description</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li style="cursor: pointer;">
-                                    <span>  <a onclick="document.getElementById('loginModal').style.display='block'; document.body.style.overflow = 'hidden';"
-                                        key="login">login</a>
-                                    <i class="fa fa-user" aria-hidden="true"></i></span>
-                                   
-                                </li>
-
-                            </ul>
-
-                        </div>
-                        <div class="header-bot-menu hide-for-desktop">
-                            <div class="hamburger" id="ham" onclick="menuOnClick()" >
-                                <span class="span1"></span>
-                                <span class="span2"></span>
-                                <span class="span3"></span>
-                            </div>
-                            <div class="mobile-links hamburger-links ham-link-close shadow" id="hamLinks"
-                                style="display: none;">
-                                <ul>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="#">eCommerce</a></li>
-                                    <li><a href="#">Freight</a></li>
-                                    <li><a href="#" onclick="mobileDrop()">Tools <i id="mobileToggle"
-                                                class="fa fa-angle-down" aria-hidden="true"></i></a></li>
-                                    <ul class="mobile-drop" id="mobileDrop">
-                                        <li><a href="address-book.html">Address Book <i class="fa fa-address-book"
-                                                    aria-hidden="true"></i></a></li>
-                                        <li><a href="#">Service 2</a></li>
-                                        <li><a href="#">Service 3</a></li>
-                                    </ul>
-                                    <li style="cursor: pointer;">
-                                        <a
-                                            onclick="document.getElementById('loginModal').style.display='block'; document.body.style.overflow = 'hidden';">Login
-                                            <i class="fa fa-user" aria-hidden="true"></i></a>
-
-                                    </li>
-                                    <li>
-                                        <div class="langswitch">
-                                    <img src="./assets/eng.svg" alt="EN" class="en_lang" onclick="setLanguage('en')">
-                                    <img src="./assets/tr.svg" alt="TR" class="tr_lang" onclick="setLanguage('tr')">
-                                </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                    </form>
+                    <div class="home-right-form-links">
+                        <ul>
+                            <li>
+                                <a href="#">Book a Courier <i class="fa fa-truck" aria-hidden="true"></i> </a>
+                            </li>
+                            <li>
+                                <a href="#">Price Calculator <i class="fa fa-calculator" aria-hidden="true"></i> </a>
+                            </li>
+                            <li>
+                                <a href="#">Freight quote request <i class="fa fa-list-alt" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">Check your pickup address <i class="fa fa-map-marker" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
-
-
-
-
-     <div class="home container">
-       <div class="home-left">
-        <div class="home-bg container"><img src="./assets/Eli_logo_w.svg" alt="Elibackground"></div>
-            <h5>Since 1999</h5>
-            <h1>Express Worldwide <br> Logisitcs Solution</h1>
-            <p>A new brand in the Turkish air express market, <br> built on a
-                foundation of experience. ith tailor made <br> air transport 
-                solutions to meet differing customer needs</p>
-
-            <div class="home-left-cta">
-                <button class="btn-contact">Contact Us</button>
-                <button class="btn-quote">Get A Quote</button>
-            </div>
-        </div>
-        <div class="home-right">
-            <div class="home-right-form shadow">
-                <h4>Track Your Order</h4>
-                <form action="#" class="home-tracking-form">
-                    <input type="text" name="Tracking-Id" id="trackingID" placeholder="Tracking ID No.">
-                    <input type="text" name="Email" id="emailAddress" placeholder="Email Address">
-                    <div class="track-form-cta">
-                        <a href="#">Visit Tracking page</a>
-                        <input class="track-form-btn" type="button" value="Track Now"></div>
-                </form>
-                <div class="home-right-form-links">
-                    <ul>
-                        <li><a href="#">Book a Courier <i class="fa fa-truck" aria-hidden="true"></i>
-                        </a></li>
-                        <li><a href="#">Price Calculator <i class="fa fa-calculator" aria-hidden="true"></i>
-                        </a></li>
-                        <li><a href="#">Freight quote request <i class="fa fa-list-alt" aria-hidden="true"></i></a></li>
-                        <li><a href="#">Check your pickup address <i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
-               
-            </div>
-        </div>
-        
-    </div>   
-    <div class="pre-info">
-        <H1>We Are Global Logsitics</H1>
-    </div>
-    <div class="info">
-        <div class="info-wrapper container">
-            <div class="card">
-         
-                <div class="icon"><i class="fa fa-plane" aria-hidden="true"></i>
-                </div>
-                <p class="title">Air Freight</p>
-                <p class="text">some random text</p>
-                <p class="text">Learn More ...</p>
-             
-          </div>
-            <div class="card">
-         
-                <div class="icon"><i class="fa fa-truck" aria-hidden="true"></i>
-
-                </div>
-                <p class="title">Road Freight</p>
-                <p class="text">some random text</p>
-                <p class="text">Learn More ...</p>
-             
-          </div>
-            <div class="card">
-         
-                <div class="icon"><i class="fa fa-ship" aria-hidden="true"></i>
-                </div>
-                <p class="title">Sea Freight</p>
-                <p class="text">some random text</p>
-                <p class="text">Learn More ...</p>
-             
-          </div>
-        </div>
-    </div>
-
-    <section id="contact" class="contact">
-        <div class="contact__content container">
-            <div class="contact__card contact__location shadow">
-                <h2>How To Find Us</h2>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.4958300275384!2d28.798104015733056!3d41.03628492564918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa44e33df8629%3A0x44d5040b169e4cda!2sEli!5e0!3m2!1sen!2str!4v1604567457109!5m2!1sen!2str"
-                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
-                    aria-hidden="false" tabindex="0">
-                </iframe>
-            </div>
-            <div class="contact__card contact__message shadow">
-                <h2><span data-trans-contact>Contact Us</span></h2>
-                <form action="MAILTO:abdallahhkaram@gmail.com" method="post" enctype="text/plain">
-                    <input type="text" name="text" placeholder="Name" />
-
-                    <input type="email" placeholder="Email" />
-                    <textarea name="" id="" placeholder="Your Message"></textarea>
-                    <button type="submit">Submit</button>
-                </form>
-
-
-            </div>
-        </div>
-    </section>
-   
-    <footer>
-        <div class="footer">
-            <div class="footer__content container">
-                <div class="footer__location">
-                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <p>Halkalı Merkez Mah. Tuna Cad. Hekim Sokak No:16/A-B 34303 - Küçükçekmece - İstanbul - Türkiye
-                    </p>
-                </div>
-
-                <div class="footer__social">
-                    <div class="k"><i class="fa fa-envelope" aria-hidden="true"></i>
-                        <h4>info@eliexpress.com.tr</h4>
-                    </div>
-                    <div class="k">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                        <h4>+90 212 470 37 37 </h4>
-                    </div>
-                    <div class="k">
-                        <i class="fa fa-fax" aria-hidden="true"></i>
-                        <h4>+90 212 470 37 77 </h4>
-                    </div>
-                </div>
-
-                <div class="footer__logo">
-                    <img src="./assets/Eli_logo_w.svg" alt="Eli Logo">
-                    <img src="./assets/iata.svg" alt="Iata" class="iata">
-                </div>
-            </div>
-        </div>
-    </footer>
-   
-<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-<script src="./app/js/jquery.MultiLanguage.min.js"></script>
-<script>getLanguage();</script>
-<script src="./app/js/script.js"></script>
-</body>
-
+        <div id="info"></div>
+        <div id="footer"></div>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="./app/js/script.js"></script>
+    </body>
 </html>

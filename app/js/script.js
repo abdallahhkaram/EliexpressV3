@@ -1,17 +1,9 @@
-window.onscroll = function () {
-    stickHead();
-};
-
-var header = document.getElementById("topHeader");
-var sticky = header.offsetTop;
-
-function stickHead() {
-    if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-    } else {
-        header.classList.remove("sticky");
-    }
-}
+$("#header").load("./app/html/header.html");
+$("#info").load("./app/html/info.html");
+$("#footer").load("./app/html/footer.html");
+$(window).on("load", function () {
+    $(".loader-wrapper").delay(1000).fadeOut("slow");
+});
 
 function menuOnClick() {
     document.getElementById("ham").classList.toggle("change");

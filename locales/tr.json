@@ -3,8 +3,12 @@
         "contact": "İletişim",
         "about": "Hakkımızda",
         "ecommerce": "eTicaret",
+        "Courier": "Kurye",
+        "Wholesale": "Toptan",
         "freight": "Navlun",
         "tools": "Araçlar",
-        "login": "Oturum aç"
+        "login": "Oturum aç",
+        "home-par": "E-ticaret, kurye ve nakliye çözümlerinin perakende ve toptan satış sağlayıcısı",
+        "home-h1": "Uluslararası nakliye Eli Express"
     }
 }

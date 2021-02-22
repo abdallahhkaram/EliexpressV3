@@ -3,8 +3,12 @@
         "contact": "Contact Us",
         "about": "About Us",
         "ecommerce": "eCommerce",
+        "Courier": "Courier",
+        "wholesale": "Wholesale",
         "freight": "Freight",
         "tools": "Tools",
-        "login": "Login "
+        "login": "Login ",
+        "home-par": "Retail and wholesale provider of ecommerce, courier and freight solutions",
+        "home-h1": "International shipping with Eli Express"
     }
 }

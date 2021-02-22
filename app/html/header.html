@@ -1,0 +1,342 @@
+<header>
+    <script src="./app/js/jquery.MultiLanguage.min.js"></script>
+    <script>
+        getLanguage();
+        window.onscroll = function () {
+    stickHead();
+};
+
+var header = document.getElementById("topHeader");
+var sticky = header.offsetTop;
+
+function stickHead() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+}
+
+    </script>
+    <div class="login-form  login-modal" id="loginModal">
+        <div class="login-bg  shadow">
+            <form action="#" method="post">
+                <span
+                    onclick="document.getElementById('loginModal').style.display='none'; document.body.style.overflow = 'visible'; "
+                    class="close" title="Close Modal">&times;</span>
+                <div class="loing-form-wrapper">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="name" required>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <button type="submit">Login</button>
+
+                    <label class="login-check">
+                        <input type="checkbox" name="remember"> Remeber Me
+                    </label>
+
+                </div>
+                <div class="login-bot">
+
+                    <a href="#">Forgot password ?</a>
+                    <a href="#" class="sign-up">Sign Up</a>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+    <div class="header-area">
+        <div class="header-top hide-for-mobile ">
+            <div class="container">
+                <div class="header-top-wrapper">
+                    <div class="header-info-left">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    info@eliexpress.com.tr
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-phone-square" aria-hidden="true"></i>
+                                    +90 212 470 37 37
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-info-right">
+                        <div class="header-info-right-links">
+                            <a href="#" key="contact">Contact Us</a>
+                        </div>
+                        <ul class="header-social">
+                            <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
+                            <li> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <div class="langswitch">
+                                <img src="./assets/eng.svg" alt="EN" class="en_lang" onclick="setLanguage('en')">
+                                <img src="./assets/tr.svg" alt="TR" class="tr_lang" onclick="setLanguage('tr')">
+                            </div>
+                        </ul>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+        <div class="header-bot shadow" id="topHeader">
+            <div class="container">
+                <div class="header-bot-wrapper">
+                    <div class="header-bot-left">
+                        <a href="index.html"><img src="./assets/Eli-logo-or.svg" alt="Eli Logo"></a>
+                    </div>
+                    <div class="header-bot-right hide-for-mobile">
+                        <ul class="header-bot-links">
+                            <li>
+                                <a href="about.html" key="about">About Us</a>
+                                <div class="dropdown-cont  header-about">
+                                    <div class="dropdown-img">
+                                        <div class=""> <img src="./assets/courierbg.png" alt="couriers"></div>
+
+                                        <div>
+                                            <p>A new brand in the Turkish air express market, built on a foundation
+                                                of
+                                                experience.
+                                                With tailor made air transport solutions to meet differing customer
+                                                needs ...
+                                                <a href="about.html">Read More</a>
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <span><a href="#" key="ecommerce">eCommerce
+
+                                    </a> <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+
+                                <div class="dropdown-cont ">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Cross border shipping</a>
+
+                                            <p>> This is a small description</p>
+                                        </li>
+                                        <li>
+                                            <a href="#">Bulk shipping</a>
+
+                                            <p>> This is a small description</p>
+                                        </li>
+                                        <li>
+                                            <a href="#">Export process (ETGB)</a>
+
+                                            <p>> This is a small description</p>
+                                        </li>
+                                        <li>
+                                            <a href="#">Ship now</a>
+                                            <p>> This is a small description</p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li>
+                                <span>
+                                    <a href="#" key="Courier">Courier
+                                    </a> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                                <div class="dropdown-cont ">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Ship international</a>
+
+                                            <p>> This is a small description</p>
+                                        </li>
+                                        <li>
+                                            <a href="#">Bulk ship</a>
+
+                                            <p>> This is a small description</p>
+                                        </li>
+                                        <li>
+                                            <a href="#">Export process (ETGB)</a>
+
+                                            <p>> This is a small description</p>
+                                        </li>
+                                        <li>
+                                            <a href="#">Paperwork guide</a>
+
+                                            <p>> This is a small description</p>
+                                        </li>
+                                        <li>
+                                            <a href="#">Ship now</a>
+
+                                            <p>> This is a small description</p>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <span>
+                                    <a href="#" key="Wholesale">Wholesale
+                                    </a> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                                <div class="dropdown-cont ">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Inbound consolidations</a>
+
+                                            <p>> This is a small description</p>
+                                        </li>
+                                        <li>
+                                            <a href="#">Final mile management</a>
+
+                                            <p>> This is a small description</p>
+                                        </li>
+                                        <li>
+                                            <a href="#">Outbound drop ship</a>
+
+                                            <p>> This is a small description</p>
+                                        </li>
+                                        <li>
+                                            <a href="#">Outbound collection</a>
+
+                                            <p>> This is a small description</p>
+                                        </li>
+                                        <li>
+                                            <a href="#">Export customs (ETGB)</a>
+
+                                            <p>> This is a small description</p>
+                                        </li>
+                                        <li>
+                                            <a href="#">Linehaul</a>
+
+                                            <p>> This is a small description</p>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <span>
+                                    <a href="#" key="freight">Freight
+                                    </a> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                                <div class="dropdown-cont ">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Airfreight</a>
+
+                                            <p>> This is a small description</p>
+                                        </li>
+                                        <li>
+                                            <a href="#">Request a quote</a>
+
+                                            <p>> This is a small description</p>
+                                        </li>
+                                        <li>
+                                            <a href="#">Export processing</a>
+
+                                            <p>> This is a small description</p>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sea and road</a>
+
+                                            <p>> This is a small description</p>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <span> <a href="#" key="tools">Tools
+                                    </a> <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+
+                                <div class="dropdown-cont ">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Tracking <i class="fa fa-truck" aria-hidden="true"></i></a>
+                                            <p>> This is a small description</p>
+                                        </li>
+                                        <li>
+                                            <a href="booking.html">Booking <i class="fa fa-book"
+                                                    aria-hidden="true"></i></a>
+                                            <p>> This is a small description</p>
+                                        </li>
+                                        <li>
+                                            <a href="#">Price Calculator <i class="fa fa-calculator"
+                                                    aria-hidden="true"></i>
+                                            </a>
+                                            <p>> This is a small description</p>
+                                        </li>
+                                        <li>
+                                            <a href="#">Quote Request<i class="fa fa-list-alt"
+                                                    aria-hidden="true"></i>
+                                            </a>
+                                            <p>> This is a small description</p>
+                                        </li>
+                                        <li>
+                                            <a href="address-book.html">Pickup Address <i class="fa fa-address-book"
+                                                    aria-hidden="true"></i>
+                                            </a>
+                                            <p>> This is a small description</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li style="cursor: pointer;">
+                                <span>  <a onclick="document.getElementById('loginModal').style.display='block'; document.body.style.overflow = 'hidden';"
+                                    key="login">login</a>
+                                <i class="fa fa-user" aria-hidden="true"></i></span>
+                               
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <div class="header-bot-menu hide-for-desktop">
+                        <div class="hamburger" id="ham" onclick="menuOnClick()" >
+                            <span class="span1"></span>
+                            <span class="span2"></span>
+                            <span class="span3"></span>
+                        </div>
+                        <div class="mobile-links hamburger-links ham-link-close shadow" id="hamLinks"
+                            style="display: none;">
+                            <ul>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="#">eCommerce</a></li>
+                                <li><a href="#">Freight</a></li>
+                                <li><a href="#" onclick="mobileDrop()">Tools <i id="mobileToggle"
+                                            class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+                                <ul class="mobile-drop" id="mobileDrop">
+                                    <li><a href="address-book.html">Address Book <i class="fa fa-address-book"
+                                                aria-hidden="true"></i></a></li>
+                                    <li><a href="#">Service 2</a></li>
+                                    <li><a href="#">Service 3</a></li>
+                                </ul>
+                                <li style="cursor: pointer;">
+                                    <a
+                                        onclick="document.getElementById('loginModal').style.display='block'; document.body.style.overflow = 'hidden';">Login
+                                        <i class="fa fa-user" aria-hidden="true"></i></a>
+
+                                </li>
+                                <li>
+                                    <div class="langswitch">
+                                <img src="./assets/eng.svg" alt="EN" class="en_lang" onclick="setLanguage('en')">
+                                <img src="./assets/tr.svg" alt="TR" class="tr_lang" onclick="setLanguage('tr')">
+                            </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

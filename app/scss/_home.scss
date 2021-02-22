@@ -19,7 +19,6 @@
 }
 .home-left {
     z-index: 0;
-    margin-top: 75px;
     color: white;
     h5 {
         font-size: $font-xsm;
@@ -29,9 +28,10 @@
         font-size: $font-xlar;
         margin: 15px 0;
         line-height: 1.1;
+        max-width: 600px;
     }
     p {
-        font-size: $font-sm;
+        font-size: $font-reg;
         line-height: 1.4;
         font-weight: $fontw-lig;
         margin: 15px 0;
