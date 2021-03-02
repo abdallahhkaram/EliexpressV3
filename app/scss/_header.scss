@@ -122,8 +122,8 @@
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
     z-index: 1;
-
-    top: 130px;
+    border-top: none;
+    top: 129px;
     -webkit-box-shadow: -5px 15px 15px 5px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: -5px 15px 15px 5px rgba(0, 0, 0, 0.3);
     box-shadow: -5px 15px 15px 5px rgba(0, 0, 0, 0.3);
@@ -143,7 +143,10 @@
         }
         p {
             padding: 5px 15px;
-            font-size: $font-xsm;
+            font-size: $font-sm;
+            font-style: italic;
+            opacity: 0.75;
+            margin-bottom: 15px;
         }
     }
 }
