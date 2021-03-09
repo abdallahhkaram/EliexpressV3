@@ -17,3 +17,7 @@ function mobileDrop() {
 }
 
 ///// header click
+function loadContenet(clicked_id) {
+    console.log(clicked_id);
+    $("#adminPage").load("./app/html/" + clicked_id + ".html");
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="./dist/style.css" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <title>Eliexpress | Worldwide Express Logistics</title>
+    </head>
+
+    <body>
+        <div class="admin-page">
+            <div class="sidenav">
+                <div class="sidenav-user">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <h4>User Name</h4>
+                </div>
+                <div class="sidenav-links">
+                    <ul>
+                        <li>
+                            <a href="#">Account Managment</a>
+                        </li>
+                        <li>
+                            <a href="#">Shipments</a>
+                        </li>
+                        <li>
+                            <a href="#">Tracking</a>
+                        </li>
+                        <li>
+                            <a href="#" id="booking" onclick="loadContenet(this.id)">Booking</a>
+                        </li>
+                        <li>
+                            <a href="#" id="addressBook" onclick="loadContenet(this.id)">Address Book</a>
+                        </li>
+                        <li>
+                            <a href="#">Account Managment</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidenav-footer">
+                    <a href="#">Signout <i class="fa fa-sign-out" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="admin-cont" id="adminPage"></div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="./app/js/script.js"></script>
+    </body>
+</html>

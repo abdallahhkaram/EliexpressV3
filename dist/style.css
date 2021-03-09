@@ -1163,6 +1163,71 @@ li {
   background: #1c74a4;
 }
 
+.admin-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+.sidenav {
+  background: #0f3950;
+  color: white;
+  width: 200px;
+  overflow-y: hidden;
+}
+
+.sidenav .sidenav-user {
+  padding: 15px;
+  text-align: center;
+}
+
+.sidenav .sidenav-user i {
+  font-size: 30px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.sidenav .sidenav-links li {
+  padding: 5px;
+}
+
+.sidenav .sidenav-links li:hover {
+  background: #eb7828;
+}
+
+.sidenav .sidenav-links li a {
+  display: block;
+  position: relative;
+  padding: 5px;
+  color: white;
+  font-size: 18px;
+  width: inherit;
+}
+
+.sidenav .sidenav-footer {
+  position: absolute;
+  bottom: 0;
+  padding: 15px;
+}
+
+.sidenav .sidenav-footer a {
+  color: white;
+}
+
+.sidenav .sidenav-footer a:hover {
+  color: #eb7828;
+}
+
+.admin-cont {
+  -webkit-box-flex: 8.5;
+      -ms-flex: 8.5;
+          flex: 8.5;
+  padding: 50px;
+  background: white;
+  overflow: auto;
+}
+
 .footer {
   width: 100%;
   background: #0f3950;
